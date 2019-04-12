@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "lib": [
+      "dom",
+        "es2015",
+      "es2016",
+      "es2017.object"
+    ],
+    "rootDir": "./",
+    "baseUrl": "./",
+    "jsx": "react",
+    "paths": {
+      "@src/*": [ "./src/*" ],
+      "@test/*": [ "./test/*" ]
+    },
+    "allowJs": false,
+    "strict": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "resolveJsonModule": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "suppressImplicitAnyIndexErrors": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "noEmitOnError": true,
+    "pretty": true,
+    "sourceMap": true,
+    "removeComments": true,
+    "esModuleInterop": true,
+    "plugins": [ ]
+  },
+  "exclude": [ "node_modules" ]
+}
