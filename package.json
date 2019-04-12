@@ -21,6 +21,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": { },
-  "devDependencies": { }
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^10.14.4"
+  }
 }
