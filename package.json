@@ -1,0 +1,26 @@
+{
+  "name": "strongly-typed-event-emitter",
+  "version": "0.0.0",
+  "description": "This is a strongly typed version of the Node [`EventEmitter`](https://nodejs.org/api/events.html#events_class_eventemitter).",
+  "keywords": [
+    "EventEmitter",
+    "TypeScript"
+  ],
+  "homepage": "https://github.com/G-Rath/strongly-typed-event-emitter#readme",
+  "bugs": {
+    "url": "https://github.com/G-Rath/strongly-typed-event-emitter/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/G-Rath/strongly-typed-event-emitter.git"
+  },
+  "license": "ISC",
+  "author": "Gareth Jones",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": { },
+  "devDependencies": { }
+}
