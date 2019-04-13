@@ -16,7 +16,11 @@
   },
   "license": "ISC",
   "author": "Gareth Jones",
-  "main": "src/index.js",
+  "files": [
+    "src",
+    "lib"
+  ],
+  "main": "lib/index.js",
   "types": "src/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
