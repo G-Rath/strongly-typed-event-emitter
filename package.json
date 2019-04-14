@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/G-Rath/strongly-typed-event-emitter.git"
+    "url": "https://github.com/G-Rath/strongly-typed-event-emitter.git"
   },
   "license": "ISC",
   "author": "Gareth Jones",
