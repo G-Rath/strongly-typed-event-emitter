@@ -23,7 +23,8 @@
   "main": "lib/index.js",
   "types": "src/index.d.ts",
   "scripts": {
-    "build": "tsc -p tsconfig.build.json"
+    "build": "tsc -p tsconfig.build.json",
+    "check": "tsc --noEmit"
   },
   "dependencies": {},
   "devDependencies": {
