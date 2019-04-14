@@ -24,7 +24,8 @@
   "types": "src/index.d.ts",
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
-    "check": "tsc --noEmit"
+    "check": "tsc --noEmit",
+    "lint": "eslint **/*.ts"
   },
   "jest": {
     "moduleFileExtensions": [
