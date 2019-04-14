@@ -23,7 +23,7 @@
   "main": "lib/index.js",
   "types": "src/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc -p tsconfig.build.json"
   },
   "dependencies": {},
   "devDependencies": {
