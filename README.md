@@ -22,7 +22,7 @@ ee.on('e:user.login', data => {
 });
 
 ee.on('e:user.signout', data => {
-  alert('Come back soon!');
+  console.log(data.user.firstName, 'has signed out');
 });
 
 btns.logout.onclick = () => {
@@ -72,7 +72,7 @@ ee.on('e:user.login', data => {
 
 // TS2345: Argument of type '"e:user.signout"' is not assignable to parameter of type '"e:user.login" | "e:user.logout"'.
 ee.on('e:user.signout', data => {
-  alert('Come back soon!');
+  console.log(data.user.firstName, 'has signed out');
 });
 
 btns.logout.onclick = () => {
@@ -137,7 +137,7 @@ ee.on(UserEvent.Login, data => {
 
 // TS2345: Argument of type '"e:user.signout"' is not assignable to parameter of type 'UserEvent'.
 ee.on('e:user.signout', data => {
-  alert('Come back soon!');
+  console.log(data.user.firstName, 'has signed out');
 });
 
 btns.logout.onclick = () => {
@@ -209,7 +209,7 @@ ee.on(UserEvent.Login, data => {
 
 // TS2345: Argument of type '"e:user.signout"' is not assignable to parameter of type 'UserEvent | "e:user.save"'.
 ee.on('e:user.signout', data => {
-  alert('Come back soon!');
+  console.log(data.user.firstName, 'has signed out');
 });
 
 btns.save.onclick = () => {
@@ -288,7 +288,7 @@ ee.on(UserEvent.Login, data => {
 
 // TS2345: Argument of type '"e:user.signout"' is not assignable to parameter of type 'UserEvent'.
 ee.on('e:user.signout', data => {
-  alert('Come back soon!');
+  console.log(data.user.firstName, 'has signed out');
 });
 
 btns.logout.onclick = () => {
@@ -341,7 +341,7 @@ ee.on(UserEvent.Login, data => {
 
 // TS2345: Argument of type '"e:user.signout"' is not assignable to parameter of type 'UserEvent | "e:user.save"'.
 ee.on('e:user.signout', data => {
-  alert('Come back soon!');
+  console.log(data.user.firstName, 'has signed out');
 });
 
 btns.save.onclick = () => {
