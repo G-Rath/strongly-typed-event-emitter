@@ -105,7 +105,7 @@ If you're having problems or unexpected results with either of these features, p
 
 Here are some examples of `StronglyTypedEventEmitter` in action:
 
-#### Enums as keys
+### Enums as keys
 
 You can use enums as keys just fine. Note that this will lock you into using the enum; you can't pass the value of a key of the enum.
 This isn't strictly a bad thing, but it means you *must* export your enum if you want to use it outside of the file its in.
@@ -146,7 +146,7 @@ btns.logout.onclick = () => {
 };
 ```
 
-#### Events that don't have `data` (Caveat #1)
+### Events that don't have `data` (Caveat #1)
 
 This is the first caveat of this package - if you have an event with no `data`,
 you still have to pass a second parameter to `emit` (and other such functions):
@@ -174,7 +174,7 @@ ee.emit(SocketEvent.Heartbeat, {});
 ee.emit(SocketEvent.Heartbeat, undefined);
 ```
 
-#### Merging event maps
+### Merging event maps
 
 Merging works just fine too!
 
@@ -255,7 +255,7 @@ ee.on('e:user.save', data => {
 
 You should be careful while doing this however - don't mistake the result for a union.
 
-#### Inheritance
+### Inheritance
 
 Finally, you can extend from `StronglyTypedEventEmitter` just fine:
 
@@ -297,7 +297,7 @@ btns.logout.onclick = () => {
 };
 ```
 
-#### 2 degrees of inheritance
+### 2 degrees of inheritance
 
 If you're using inheritance, it's recommended that you add an optional generic parameter to your class,
 that is merged into `StronglyTypedEventEmitter`.
@@ -350,13 +350,13 @@ btns.save.onclick = () => {
 };
 ```
 
-### Contributing
+## Contributing
 
 The most important thing when contributing is to make sure to add information about changes to the `CHANGELOG.md`,
 ideally before publishing a new version. If you're not confident doing this, just ensure you provide primary maintainers
 as much information as possible, particular about any special rules or gotchas that are a result of your change.
 
-### Linting
+#### Linting
 
 To run `eslint` on the project, run:
 
@@ -364,7 +364,7 @@ To run `eslint` on the project, run:
 npm run lint 
 ```
 
-### Testing
+#### Testing
 
 There is no real way to test this kind of package - instead, jest snapshots are used
 to ensure all changes that are made result in a known (and therefore expected) reaction from TypeScript.
@@ -379,7 +379,7 @@ To run `jest` on the project, run:
 npm run test
 ```
 
-### Checking
+#### Checking
 
 To check that the project is type safe, run:
 
@@ -387,7 +387,7 @@ To check that the project is type safe, run:
 npm run check
 ```
 
-### Compiling
+#### Compiling
 
 To compile the project using `TypeScript`, run:
 
@@ -395,7 +395,7 @@ To compile the project using `TypeScript`, run:
 npm run compile
 ```
 
-### Changelog
+#### Changelog
 
 This package uses a `CHANGELOG.md` to track, note, and describe changes to its surface.
 
@@ -410,7 +410,7 @@ The version header is enclosed in a link, linking to the comparing page for the 
 (to allow users to easily bring up a full git comparision between the new & previous versions of the package),
  and has the date of the release at the end. 
 
-### Tagging, Versioning & Publishing
+#### Tagging, Versioning & Publishing
 
 We use [SemVer](http://semver.org/) for versioning.
 
