@@ -30,7 +30,8 @@
     "build": "tsc -p tsconfig.build.json",
     "check": "tsc --noEmit",
     "lint": "eslint **/*.ts",
-    "test": "jest"
+    "test": "jest",
+    "version": "cd scripts && ts-node npm-version.ts"
   },
   "jest": {
     "moduleFileExtensions": [
