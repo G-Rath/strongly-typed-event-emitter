@@ -25,7 +25,8 @@
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "check": "tsc --noEmit",
-    "lint": "eslint **/*.ts"
+    "lint": "eslint **/*.ts",
+    "test": "jest"
   },
   "jest": {
     "moduleFileExtensions": [
