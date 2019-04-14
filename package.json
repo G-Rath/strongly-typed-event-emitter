@@ -22,6 +22,10 @@
   ],
   "main": "lib/index.js",
   "types": "src/index.d.ts",
+  "directories": {
+    "lib": "./lib/",
+    "test": "./test/"
+  },
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "check": "tsc --noEmit",
