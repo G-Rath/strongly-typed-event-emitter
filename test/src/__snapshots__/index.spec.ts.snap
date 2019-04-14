@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StronglyTypedEventEmitter 0: "The Problem" 1`] = `
+Array [
+  "events.d.ts#L1 TS2552: Cannot find name 'NodeJS'. Did you mean 'Node'?",
+]
+`;
+
+exports[`StronglyTypedEventEmitter 1: "The Solution" 1`] = `
+Array [
+  "_source.ts#L15 TS2551: Property 'tokne' does not exist on type '{ token: string; }'. Did you mean 'token'?",
+  "_source.ts#L21 TS2345: Argument of type '\\"e:user.signout\\"' is not assignable to parameter of type '\\"e:user.login\\" | \\"e:user.logout\\"'.",
+  "_source.ts#L27 TS2345: Argument of type '{}' is not assignable to parameter of type '{ user: { firstName: string; }; }'.
+														Property 'user' is missing in type '{}' but required in type '{ user: { firstName: string; }; }'.",
+  "events.d.ts#L1 TS2552: Cannot find name 'NodeJS'. Did you mean 'Node'?",
+]
+`;
+
+exports[`StronglyTypedEventEmitter 2: "Enums as keys" 1`] = `
+Array [
+  "_source.ts#L20 TS2551: Property 'tokne' does not exist on type '{ token: string; }'. Did you mean 'token'?",
+  "_source.ts#L26 TS2345: Argument of type '\\"e:user.signout\\"' is not assignable to parameter of type 'UserEvent'.",
+  "_source.ts#L32 TS2345: Argument of type '{}' is not assignable to parameter of type '{ user: { firstName: string; }; }'.
+														Property 'user' is missing in type '{}' but required in type '{ user: { firstName: string; }; }'.",
+  "events.d.ts#L1 TS2552: Cannot find name 'NodeJS'. Did you mean 'Node'?",
+]
+`;
+
+exports[`StronglyTypedEventEmitter 3: "Events that don't have "data" (Caveat #1)" 1`] = `
+Array [
+  "_source.ts#L16 TS2554: Expected 2 arguments, but got 1.",
+  "_source.ts#L18 TS2345: Argument of type '{}' is not assignable to parameter of type 'void'.",
+  "events.d.ts#L1 TS2552: Cannot find name 'NodeJS'. Did you mean 'Node'?",
+]
+`;
+
+exports[`StronglyTypedEventEmitter 4: "Merging with same keys" 1`] = `
+Array [
+  "events.d.ts#L1 TS2552: Cannot find name 'NodeJS'. Did you mean 'Node'?",
+]
+`;
+
+exports[`StronglyTypedEventEmitter 5: "Merging event maps" 1`] = `
+Array [
+  "_source.ts#L24 TS2551: Property 'tokne' does not exist on type '{ token: string; }'. Did you mean 'token'?",
+  "_source.ts#L30 TS2345: Argument of type '\\"e:user.signout\\"' is not assignable to parameter of type 'UserEvent | \\"e:user.save\\"'.",
+  "_source.ts#L36 TS2345: Argument of type '{}' is not assignable to parameter of type '{ user: { firstName: string; }; }'.
+														Property 'user' is missing in type '{}' but required in type '{ user: { firstName: string; }; }'.",
+  "events.d.ts#L1 TS2552: Cannot find name 'NodeJS'. Did you mean 'Node'?",
+]
+`;
+
+exports[`StronglyTypedEventEmitter 6: "Inheritance" 1`] = `
+Array [
+  "_source.ts#L22 TS2551: Property 'tokne' does not exist on type '{ token: string; }'. Did you mean 'token'?",
+  "_source.ts#L28 TS2345: Argument of type '\\"e:user.signout\\"' is not assignable to parameter of type 'UserEvent'.",
+  "_source.ts#L34 TS2345: Argument of type '{}' is not assignable to parameter of type '{ user: { firstName: string; }; }'.
+														Property 'user' is missing in type '{}' but required in type '{ user: { firstName: string; }; }'.",
+  "events.d.ts#L1 TS2552: Cannot find name 'NodeJS'. Did you mean 'Node'?",
+]
+`;
+
+exports[`StronglyTypedEventEmitter 7: "2 degrees of inheritance" 1`] = `
+Array [
+  "_source.ts#L30 TS2551: Property 'tokne' does not exist on type '{ token: string; }'. Did you mean 'token'?",
+  "_source.ts#L36 TS2345: Argument of type '\\"e:user.signout\\"' is not assignable to parameter of type 'UserEvent | \\"e:user.save\\"'.",
+  "_source.ts#L42 TS2345: Argument of type '{}' is not assignable to parameter of type '{ user: { firstName: string; }; }'.
+														Property 'user' is missing in type '{}' but required in type '{ user: { firstName: string; }; }'.",
+  "events.d.ts#L1 TS2552: Cannot find name 'NodeJS'. Did you mean 'Node'?",
+]
+`;
