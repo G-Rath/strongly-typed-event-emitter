@@ -6,9 +6,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.0.1] - 2019-04-14
+
 ## 0.0.0
 
 ### Added
  - Initial commit
 
-[Unreleased]: https://github.com/G-Rath/strongly-typed-event-emitter/compare/v0.0.0...HEAD
+[Unreleased]: https://github.com/G-Rath/strongly-typed-event-emitter/compare/v0.0.1...HEAD
+
+[0.0.1]: https://github.com/G-Rath/strongly-typed-event-emitter/compare/v0.0.0...v0.0.1
