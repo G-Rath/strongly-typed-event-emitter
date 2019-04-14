@@ -15,8 +15,8 @@
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/no-unnecessary-type-assertion": "error",
     "@typescript-eslint/no-unnecessary-qualifier": "warn",
-    "@typescript-eslint/promise-function-async": "warn",
     "@typescript-eslint/restrict-plus-operands": "warn",
+    "@typescript-eslint/member-delimiter-style": [ "error", { "singleline": { "delimiter": "comma" } } ],
     "@typescript-eslint/generic-type-naming": [ "error", "^T([A-Z0-9][a-zA-Z0-9]*){0,1}$|^[A-Z]{1}$" ],
     "@typescript-eslint/no-unused-vars": [
       "warn", {
