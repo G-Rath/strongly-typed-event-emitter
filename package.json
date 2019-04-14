@@ -26,6 +26,23 @@
     "build": "tsc -p tsconfig.build.json",
     "check": "tsc --noEmit"
   },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json",
+      "jsx",
+      "node"
+    ],
+    "moduleNameMapper": {
+      "^@src/(.*)$": "<rootDir>/src/$1",
+      "^@test/(.*)$": "<rootDir>/test/$1"
+    },
+    "transform": {
+      ".(ts|tsx)": "ts-jest"
+    }
+  },
   "dependencies": {},
   "devDependencies": {
     "@types/jest": "^24.0.11",
