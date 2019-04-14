@@ -1,6 +1,8 @@
 import { EventEmitter } from 'events';
 
-export declare class StronglyTypedEventEmitter<TEventMap extends Record<PropertyKey, unknown>> extends EventEmitter {
+export type EventMap = Record<PropertyKey, unknown>;
+
+export declare class StronglyTypedEventEmitter<TEventMap extends EventMap> extends EventEmitter {
   /** @deprecated since v4.0.0 */
   public static listenerCount(emitter: EventEmitter, event: keyof PropertyKey): number;
 
