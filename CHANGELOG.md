@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Changed
+ - `module` is now set to `commonjs`, to allow usage without transformation.
+
 ## [0.0.1] - 2019-04-14
 
 ## 0.0.0
