@@ -29,7 +29,7 @@
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "check": "tsc --noEmit",
-    "lint": "eslint \"**/*.ts\"",
+    "lint": "eslint \"**/*.{t,j}s\"",
     "lint:staged": "lint-staged",
     "test": "jest",
     "version": "cd scripts && ts-node npm-version.ts"
