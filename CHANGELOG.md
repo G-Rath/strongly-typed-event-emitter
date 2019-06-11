@@ -21,4 +21,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 [Unreleased]: https://github.com/G-Rath/strongly-typed-event-emitter/compare/v0.0.2...HEAD
 
 [0.0.2]: https://github.com/G-Rath/strongly-typed-event-emitter/compare/v0.0.1...v0.0.2
-[0.0.1]: https://github.com/G-Rath/strongly-typed-event-emitter/compare/v0.0.0...v0.0.1
+[0.0.1]: https://github.com/G-Rath/strongly-typed-event-emitter/compare/c1a9ec...v0.0.1
