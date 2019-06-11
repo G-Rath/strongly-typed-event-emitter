@@ -45,4 +45,3 @@ addFilesToGit(Object.values(filePaths), cwd);
 console.log();
 console.log('all done! -- have a nice day :)');
 console.log();
-
