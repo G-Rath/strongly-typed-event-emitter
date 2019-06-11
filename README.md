@@ -1,4 +1,4 @@
-# @g-rath/strongly-typed-event-emitter
+# strongly-typed-event-emitter
 
 This is a strongly typed version of the Node [`EventEmitter`](https://nodejs.org/api/events.html#events_class_eventemitter).
 
@@ -361,7 +361,7 @@ as much information as possible, particular about any special rules or gotchas t
 To run `eslint` on the project, run:
 
 ```
-npm run lint 
+npm run lint
 ```
 
 #### Testing
@@ -406,9 +406,9 @@ Note that the `CHANGELOG` is *not* fixed - it's perfectly reasonable to edit it 
 The version headers of the `CHANGELOG` are automated by an `npm-version` script, located in the `scripts` folder,
 When run, the script will insert a new version header below the `[Unreleased]` header.
 
-The version header is enclosed in a link, linking to the comparing page for the repo 
+The version header is enclosed in a link, linking to the comparing page for the repo
 (to allow users to easily bring up a full git comparision between the new & previous versions of the package),
- and has the date of the release at the end. 
+ and has the date of the release at the end.
 
 #### Tagging, Versioning & Publishing
 
@@ -421,5 +421,4 @@ Both publishing & versioning should be done using `npm`, which'll also handle ta
 To publish a new version of this package, use `npm publish`.
 
 There is an `npm-version` script located in the `scripts` folder of the repo,
-that handles keeping the `CHANGELOG` headers in sync with new package versions. 
-
+that handles keeping the `CHANGELOG` headers in sync with new package versions.
