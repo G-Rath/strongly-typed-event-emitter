@@ -29,7 +29,7 @@
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "check": "tsc --noEmit",
-    "lint": "eslint \"**/*.ts\"",
+    "lint": "eslint \"**/*.{t,j}s\"",
     "lint:staged": "lint-staged",
     "test": "jest",
     "version": "cd scripts && ts-node npm-version.ts"
@@ -55,10 +55,10 @@
   "devDependencies": {
     "@types/jest": "^24.0.11",
     "@types/node": "^10.14.4",
-    "@typescript-eslint/eslint-plugin": "^1.6.0",
-    "@typescript-eslint/parser": "^1.6.0",
+    "@typescript-eslint/eslint-plugin": "^1.10.2",
+    "@typescript-eslint/parser": "^1.10.2",
     "eslint": "^5.16.0",
-    "eslint-plugin-jest": "^22.4.1",
+    "eslint-plugin-jest": "^22.6.4",
     "husky": "^2.4.0",
     "jest": "^24.7.1",
     "jest-junit": "^6.4.0",

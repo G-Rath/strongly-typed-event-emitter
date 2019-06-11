@@ -12,18 +12,20 @@
     "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
-    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-use-before-define": [ "error", { "typedefs": false } ],
     "@typescript-eslint/no-unnecessary-type-assertion": "error",
     "@typescript-eslint/no-unnecessary-qualifier": "warn",
-    "@typescript-eslint/restrict-plus-operands": "warn",
-    "@typescript-eslint/member-delimiter-style": [ "error", { "singleline": { "delimiter": "comma" } } ],
-    "@typescript-eslint/generic-type-naming": [ "error", "^T([A-Z0-9][a-zA-Z0-9]*){0,1}$|^[A-Z]{1}$" ],
+    "@typescript-eslint/no-namespace": "warn",
     "@typescript-eslint/no-unused-vars": [
       "warn", {
         "argsIgnorePattern": "^_|props"
       }
     ],
     "@typescript-eslint/no-require-imports": "warn",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/restrict-plus-operands": "warn",
+    "@typescript-eslint/member-delimiter-style": [ "error", { "singleline": { "delimiter": "comma" } } ],
+    "@typescript-eslint/generic-type-naming": [ "error", "^T([A-Z0-9][a-zA-Z0-9]*){0,1}$|^[A-Z]{1}$" ],
     "@typescript-eslint/ban-ts-ignore": "warn",
     "@typescript-eslint/member-naming": [
       "warn", {
@@ -31,21 +33,35 @@
         "protected": "^_"
       }
     ],
-    "@typescript-eslint/no-namespace": "warn",
     "@typescript-eslint/array-type": [ "error", "array-simple" ],
     "@typescript-eslint/camelcase": [ "error", { "allow": [ "child_process" ] } ],
+    "@typescript-eslint/semi": [ "error", "always" ],
     "@typescript-eslint/indent": [
       "error", 2, {
         "MemberExpression": "off",
         "SwitchCase": 1
       }
     ],
+    "no-var": "error",
+    "no-else-return": "error",
+    "no-return-await": "error",
+    "no-throw-literal": "error",
+    "no-sparse-arrays": "error",
     "no-underscore-dangle": "off",
+    "no-useless-constructor": "warn",
+    "no-with": "error",
+    "no-multiple-empty-lines": "error",
+    "no-plusplus": [ "error", { "allowForLoopAfterthoughts": true } ],
+    "no-nested-ternary": "error",
+    "no-shadow": "error",
+    "no-shadow-restricted-names": "error",
+    "no-trailing-spaces": "error",
+    "prefer-arrow-callback": "warn",
+    "newline-before-return": "error",
     "curly": "error",
     "eqeqeq": "error",
     "guard-for-in": "error",
     "default-case": "error",
-    "no-with": "error",
     "radix": "error",
     "dot-notation": "error",
     "consistent-this": [ "error", "self" ],
@@ -53,9 +69,6 @@
     "brace-style": [ "error", "1tbs", { "allowSingleLine": true } ],
     "array-bracket-spacing": [ "error", "never" ],
     "yoda": "error",
-    "no-shadow": "error",
-    "no-shadow-restricted-names": "error",
-    "no-trailing-spaces": "error",
     "dot-location": [ "error", "property" ],
     "space-infix-ops": "error",
     "keyword-spacing": "error",
@@ -63,11 +76,8 @@
     "new-cap": [ "error", { "capIsNewExceptions": [ "Callsite" ] } ],
     "space-unary-ops": "error",
     "object-curly-spacing": [ "error", "always" ],
-    "no-multiple-empty-lines": "error",
-    "no-nested-ternary": "error",
-    "semi": [ "error", "always" ],
+    "semi": [ "off", "always" ],
     "semi-spacing": "error",
-    "no-plusplus": [ "error", { "allowForLoopAfterthoughts": true } ],
     "padded-blocks": [ "error", "never" ],
     "space-before-function-paren": [
       "error", {
@@ -84,6 +94,7 @@
         "exceptions": [ "#endregion" ]
       }
     ],
+    "camelcase": "off",
     "quotes": [ "error", "single" ]
   }
 }

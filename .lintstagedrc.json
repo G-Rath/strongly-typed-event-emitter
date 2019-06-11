@@ -1,5 +1,5 @@
 {
   "linters": {
-    "*.{js,jsx,ts,tsx}": "eslint"
+    "**/*.{t,j}s": "eslint"
   }
 }

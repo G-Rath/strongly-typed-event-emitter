@@ -9,12 +9,6 @@
     "plugin:eslint-plugin-jest/recommended"
   ],
   "rules": {
-    "@typescript-eslint/indent": [
-      "error", 2, {
-        "MemberExpression": "off",
-        "SwitchCase": 1
-      }
-    ],
     "@typescript-eslint/no-non-null-assertion": "off",
     "jest/no-disabled-tests": "warn",
     "jest/no-test-return-statement": "warn",
@@ -28,7 +22,13 @@
     "jest/prefer-spy-on": "warn",
     "jest/prefer-todo": "warn",
     "jest/prefer-called-with": "warn",
-    "jest/expect-expect": "error",
+    "jest/expect-expect": [
+      "error", {
+        "assertFunctionNames": [
+          "expect"
+        ]
+      }
+    ],
     "jest/valid-expect": "error",
     "jest/require-tothrow-message": "warn",
     "jest/lowercase-name": [
